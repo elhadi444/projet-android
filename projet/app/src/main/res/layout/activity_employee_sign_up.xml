@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeSignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="20dp"
+            android:background="@color/background">
+
+            <TextView
+                android:id="@+id/textView_hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="100dp"/>
+
+            <TextView
+                android:id="@+id/textViewCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textSize="18sp"
+                android:layout_marginBottom="1dp"/>
+
+            <EditText
+                android:id="@+id/editTextCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="text"
+                android:background="@drawable/inputs"
+                android:layout_marginBottom="30dp"
+                android:hint="company name"
+                android:padding="7dp"/>
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18sp"
+                android:layout_marginBottom="1dp"/>
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/inputs"
+                android:layout_marginBottom="30dp"
+                android:hint="email@email.com"
+                android:padding="7dp"/>
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="18sp"
+                android:layout_marginBottom="1dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/editTextTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:background="@drawable/inputs"
+                    android:layout_marginBottom="30dp"
+                    android:hint="**********"
+                    android:padding="7dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="18sp"
+                android:layout_marginBottom="1dp"/>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:background="@drawable/inputs"
+                android:layout_marginBottom="30dp"
+                android:hint="0123456789"
+                android:padding="7dp"/>
+
+
+            <TextView
+                android:id="@+id/textViewAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About your company"
+                android:textSize="18sp"
+                android:layout_marginBottom="1dp"/>
+
+            <EditText
+                android:id="@+id/editTextAbout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:background="@drawable/inputs"
+                android:layout_marginBottom="30dp"
+                android:padding="7dp"
+                android:gravity="top"
+                android:scrollbars="vertical"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                />
+
+            <TextView
+                android:id="@+id/textViewLinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Useful links"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageGlobe"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/globe"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextWebsite"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="90"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:background="@drawable/inputs"
+                    android:hint="website.com"
+                    android:padding="7dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewlinkedin"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/linkedin"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextlinkedIn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="90"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:background="@drawable/inputs"
+                    android:hint="Linkedin"
+                    android:padding="7dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewfacebook"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/facebook"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextFacebook"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="90"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:background="@drawable/inputs"
+                    android:hint="Facebook"
+                    android:padding="7dp" />
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/checkboxAgree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I agree to the Terms of Service and Privacy Policy."
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp">
+            </CheckBox>
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/bluegray"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="15dp"
+                android:layout_marginBottom="50dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="300dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alredy have an account?" />
+
+                <TextView
+                    android:id="@+id/textViewBtnSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Login"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

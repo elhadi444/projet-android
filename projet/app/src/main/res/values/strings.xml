@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">projet</string>
+
+    <string-array name="countries_array">
+        <item>Algeria</item>
+        <item>United States</item>
+        <item>Canada</item>
+        <item>United Kingdom</item>
+        <item>France</item>
+    </string-array>
+
+
+    <string-array name="contract">
+        <item>CDI</item>
+        <item>CDD</item>
+    </string-array>
+
+</resources>

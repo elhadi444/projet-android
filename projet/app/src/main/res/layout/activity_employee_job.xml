@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeJob">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="20dp"
+            android:background="@color/background">
+
+            <LinearLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs2card"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/mallette_white"/>
+
+                    <TextView
+                        android:id="@+id/textViewCompanyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Company Name"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 1000000 per Month"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewUser"
+                        android:layout_width="0dp"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/user_white" />
+
+                    <TextView
+                        android:id="@+id/textViewUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:text="Posision offered"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewGps"
+                        android:layout_width="0dp"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/gps_white" />
+
+                    <TextView
+                        android:id="@+id/textViewGps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:textColor="@color/white"
+                        android:text="34000, Montpellier"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewStarts"
+                        android:layout_width="0dp"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ecrire_white" />
+
+                    <TextView
+                        android:id="@+id/textViewStarts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:text="Starts, Jul 30.2024"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs2details"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Front en developer at Amazone"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/textViewLocalisation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="34000, montpellier"
+                    android:drawableLeft="@drawable/baseline_location_on_24"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDescriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum." />
+
+                <TextView
+                    android:id="@+id/textViewDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDetailsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Type of contract: CDI\nType of job: Full-Time" />
+
+                <TextView
+                    android:id="@+id/textViewAboutCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/textViewAboutCompanyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  occaecat cupidatat non proident, sunt in culpa qui officia deserunt  mollit anim id est laborum." />
+
+
+                <TextView
+                    android:id="@+id/textViewAboutContactInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact information"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/textViewWebSite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text=" Amazone.com"
+                    android:drawableLeft="@drawable/rounded_web_traffic_24"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text=" amazone@email.com"
+                    android:drawableLeft="@drawable/outline_alternate_email_24"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text=" +33123456789"
+                    android:drawableLeft="@drawable/round_local_phone_24"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/textViewFb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Facebook  @amazone"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/textViewLinkedin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Linkedin  @amazone"
+                    android:layout_marginBottom="50dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="50dp">
+
+                    <Button
+                        android:id="@+id/buttonDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/background"
+                        android:text="Delete"
+                        android:textColor="@color/bluegray"
+                        app:cornerRadius="15dp"/>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="0dp"/>
+
+                    <Button
+                        android:id="@+id/buttonEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/bluegray"
+                        android:text="Edit"
+                        android:textColor="@color/white"
+                        app:cornerRadius="15dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

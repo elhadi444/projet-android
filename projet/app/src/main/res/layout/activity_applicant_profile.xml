@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicantProfile"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="20dp"
+            android:background="@color/background">
+
+            <LinearLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs2card"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewUser"
+                        android:layout_width="0dp"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/user_white" />
+
+                    <TextView
+                        android:id="@+id/textViewPosition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:text="Posision offered"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs2details"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textViewinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact information"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text=" amazone@email.com"
+                    android:drawableLeft="@drawable/outline_alternate_email_24"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text=" +33123456789"
+                    android:drawableLeft="@drawable/round_local_phone_24"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/textViewCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CV"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textViewcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="cv.pdf"
+                    android:drawableRight="@drawable/baseline_download_24"/>
+
+                <TextView
+                    android:id="@+id/textViewMotivation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Motivation letter"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textViewmotivation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="motivation.pdf"
+                    android:drawableRight="@drawable/baseline_download_24"/>
+
+
+                <TextView
+                    android:id="@+id/textViewComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comment"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textViewcomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="comment ..."/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="50dp">
+
+                    <Button
+                        android:id="@+id/buttonRefuse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/background"
+                        android:text="Refuse"
+                        android:textColor="@color/bluegray"
+                        app:cornerRadius="15dp"/>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="0dp"/>
+
+                    <Button
+                        android:id="@+id/buttonAccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/bluegray"
+                        android:text="Accept"
+                        android:textColor="@color/white"
+                        app:cornerRadius="15dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
